@@ -1,17 +1,22 @@
+interface Person{
+  name: string;
+  birthDate: Date; //o tipo Date está presente no TypeScript assim como no JavaScript
+  eyeColor: EyeColor; //  na cor dos olhos usamos uma Enum com valores pré definidos
+  speak(): void;
+  eat(): void;
+  walk(): string;
+}
+
 enum EyeColor {
   Black = "Pretos",
   Blue = "Azuis",
   Green = "Verdes",
-  Brown = "Castanhos"
+  Brown = "Castanhos",
 };
 
 // usamos a palavra reservada class para definir uma classe
 
 class Person {
-  name: string;
-  birthDate: Date; // o tipo Date está presente no TypeScript assim como no JavaScript
-  eyeColor: EyeColor; // na cor dos olhos usamos uma Enum com valores pré definidos
-
   // aprenderemos mais sobre o construtor no próximo bloco
   // considere-o como uma função utilizada para construir um objeto a partir da classe
   // nele recebemos todos os dados necessários para construir um objeto de pessoa
